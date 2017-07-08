@@ -17,6 +17,11 @@ link in google play :
 https://play.google.com/store/apps/details?id=omar.apps923.downloadmanager
 
 
+see
+https://github.com/omar-adel/MultiDownloadManager/blob/master/DownloadManager/app/src/main/java/omar/apps923/downloadmanager/activities/MainActivity.java
+
+and all code of course to understand how it works .
+
 This code show usage of :
 
 1 - data binding concept
