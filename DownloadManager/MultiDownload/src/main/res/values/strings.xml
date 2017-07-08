@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MultiDownload</string>
+
+
+    <string name="emptylist">empty list</string>
+    <string name="progress">Progress</string>
+    <string name="downloadComplete">Download complete</string>
+    <string name="downloadPaused">Downloading paused</string>
+    <string name="downloading">Downloading</string>
+    <string name="downloadError">Download Error</string>
+    <string name="downloadOf">Download of :</string>
+    <string name="completed">completed</string>
+    <string name="alert">attention</string>
+    <string name="ok">ok</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="removeAll">Remove All</string>
+    <string name="cancelAll">Cancel All</string>
+    <string name="startAll">Start All</string>
+    <string name="completedDownloads">Completed</string>
+    <string name="pausedDownloads">Paused</string>
+    <string name="allDownloads">All</string>
+    <string name="downloads">Downloads List</string>
+
+
+</resources>

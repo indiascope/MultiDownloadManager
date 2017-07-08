@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <include android:id="@+id/rlToolBar"
+            layout="@layout/top_bar"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/rlDownload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            >
+
+            <omar.apps923.downloadmanager.GUI.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edUrl"
+                android:hint="@string/enterUrl"
+                android:layout_margin="@dimen/small_margin"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <omar.apps923.downloadmanager.GUI.CustomButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edUrl"
+                android:layout_margin="@dimen/small_margin"
+                android:text="@string/download"
+                android:id="@+id/btnDownload"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                />
+
+
+        </RelativeLayout>
+
+        <omar.apps923.downloadmanager.GUI.CustomButton
+            android:id="@+id/btnDownloads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            android:background="@color/colorPrimary"
+            android:text="@string/showDownloads"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+             android:layout_marginBottom="15dp"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="omar.modules923.multidownload">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+         android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+          >
+
+
+
+        <activity android:name=".activities.DownloadsActivity"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+        <service
+            android:name=".Download.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+
+                <action android:name="omar.modules923.multidownload.action_notification_pause_resume" />
+                <action android:name="omar.modules923.multidownload.action_notification_cancel" />
+
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+
+    </application>
+
+</manifest>
