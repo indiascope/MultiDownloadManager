@@ -14,7 +14,7 @@ with object oriented programming concepts .
 
 link in google play :
 
-play.google.com/store/apps/details?id=omar.apps923.downloadmanager
+https://play.google.com/store/apps/details?id=omar.apps923.downloadmanager
 
 
 This code show usage of :
