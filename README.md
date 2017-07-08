@@ -11,6 +11,12 @@ I wanted to develop it to show how the code can be little
 
 with object oriented programming concepts .
 
+
+link in google play :
+
+play.google.com/store/apps/details?id=omar.apps923.downloadmanager
+
+
 This code show usage of :
 
 1 - data binding concept
