@@ -8,11 +8,21 @@ I wanted to develop it to show how the code can be little
 
 with object oriented programming concepts .
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6cfc4762fab315e840a07500b8b74f5ff92886f1
 link in google play :
 
 https://play.google.com/store/apps/details?id=omar.apps923.downloadmanager
 
+<<<<<<< HEAD
 see https://github.com/omar-adel/MultiDownloadManager/blob/master/DownloadManager/app/src/main/java/omar/apps923/downloadmanager/activities/MainActivity.java
+=======
+
+see
+https://github.com/omar-adel/MultiDownloadManager/blob/master/DownloadManager/app/src/main/java/omar/apps923/downloadmanager/activities/MainActivity.java
+>>>>>>> 6cfc4762fab315e840a07500b8b74f5ff92886f1
 
 and all code of course to understand how it works .
 
@@ -35,4 +45,9 @@ https://github.com/ravirupareliya/Recyclerview-Generic-Adapter/blob/master/app/s
 6 - Thanks to
 https://github.com/Aspsine/MultiThreadDownload
 
+<<<<<<< HEAD
 I used this Repository in this app as MultiDownload Module and modified it 
+=======
+I used this Repository in this app
+ as MultiDownload Module and modified it .
+>>>>>>> 6cfc4762fab315e840a07500b8b74f5ff92886f1
