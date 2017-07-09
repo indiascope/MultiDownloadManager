@@ -6,9 +6,13 @@ import android.content.Intent;
 import android.os.IBinder;
 
 import com.activeandroid.ActiveAndroid;
+import com.activeandroid.query.Select;
 
-import omar.modules923.multidownload.DownloadManager;
+import org.greenrobot.eventbus.EventBus;
+
+ import omar.modules923.multidownload.DownloadManager;
 import omar.modules923.multidownload.DownloadRequest;
+import omar.modules923.multidownload.R;
 import omar.modules923.multidownload.models.Download;
 
 import java.io.File;
@@ -40,6 +44,8 @@ public class DownloadService extends Service {
     public static final String ACTION_RESUME_ALL = "omar.modules923.multidownload.demo.action_resume_all";
 
     public static final String ACTION_CANCEL_ALL = "omar.modules923.multidownload.demo.action_cancel_all";
+
+    public static final String ACTION_NOTIFICATION_OPEN_APP = "omar.modules923.multidownload.action_notification_open_app";
 
 
     public static final String EXTRA_TAG = "extra_tag";
@@ -170,6 +176,11 @@ public class DownloadService extends Service {
                     case ACTION_RESUME_ALL:
                         resumeAll();
                         break;
+                    case ACTION_NOTIFICATION_OPEN_APP:
+                        openApp(tag);
+                        break;
+
+
                 }
             }
 
@@ -216,7 +227,24 @@ public class DownloadService extends Service {
     private void resumeAll() {
         mDownloadManager.resumeAll();
     }
+    private void openApp(String url) {
 
+    Download downloadItem = getDownloadItem(url);
+
+     // EventBus.getDefault().post(downloadItem.getId().intValue());
+
+    }
+
+    public Download getDownloadItem(String tag)
+    {
+
+        Download downloadItem =  new Select()
+                .from(Download.class)
+                .where("url = ?", tag)
+                .executeSingle();
+
+        return downloadItem ;
+    }
 
     private void pauseAll() {
         mDownloadManager.pauseAll();

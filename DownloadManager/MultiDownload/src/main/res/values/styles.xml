@@ -5,4 +5,9 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style
+        name="NotificationTitle"
+        parent="@style/TextAppearance.StatusBar.EventContent.Title" />
+
+
 </resources>

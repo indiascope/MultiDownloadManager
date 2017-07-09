@@ -1,5 +1,6 @@
 package omar.modules923.multidownload.activities;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -276,4 +277,6 @@ public class DownloadsActivity extends BaseActivity
 
 
      }
+
+
 }

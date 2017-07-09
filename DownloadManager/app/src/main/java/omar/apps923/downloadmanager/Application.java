@@ -3,14 +3,12 @@ package omar.apps923.downloadmanager;
 
 import android.content.Context;
 import android.content.ContextWrapper;
-
 import com.activeandroid.ActiveAndroid;
-
 import omar.apps923.downloadmanager.helpers.Prefs;
 import omar.modules923.multidownload.DownloadConfiguration;
 import omar.modules923.multidownload.DownloadManager;
 
-public class Application extends android.app.Application {
+public class Application extends android.app.Application   {
 
     private static Context sContext;
 
@@ -32,6 +30,7 @@ public class Application extends android.app.Application {
         initDownloader();
 
 
+
     }
     private void initDownloader() {
          DownloadConfiguration configuration = new DownloadConfiguration();
@@ -43,5 +42,9 @@ public class Application extends android.app.Application {
     public static Context getContext() {
         return sContext;
     }
+
+
+
+
 
 }

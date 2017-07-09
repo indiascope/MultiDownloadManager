@@ -19,7 +19,7 @@ public class Download extends BasicModelSqlite
     public static final int STATUS_CANCELLED = 7;
 
 
-      @Column(name = "url")
+    @Column(name = "url", unique = true)
     public String url;
     @Column(name = "fileName")
     public String fileName;

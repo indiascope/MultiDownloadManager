@@ -19,6 +19,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
+                    android:textAppearance="@style/NotificationTitle"
                     android:id="@+id/txtvName"
                     android:layout_alignParentLeft="true"
                     android:textSize="16dp"
@@ -29,6 +30,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/progress"
                     android:id="@+id/txtvProgress"
+                    android:textAppearance="@style/NotificationTitle"
                     android:layout_marginTop="@dimen/small_margin"
                     android:textSize="14dp"
                     android:layout_alignParentLeft="true"
@@ -60,7 +62,7 @@
             android:layout_toLeftOf="@+id/imgvCancel"
             android:layout_centerVertical="true"
             android:layout_marginLeft="@dimen/small_margin"
-            android:backgroundTint="#ff0010ff" />
+             />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -71,6 +73,6 @@
             android:layout_marginRight="@dimen/small_margin"
              android:layout_alignParentRight="true"
             android:background="@drawable/cancel_notif"
-            android:backgroundTint="#ff00ff0b" />
+             />
 
     </RelativeLayout>

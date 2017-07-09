@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DownloadManager.iml" filepath="$PROJECT_DIR$/DownloadManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LocalMessageManager/LocalMessageManager.iml" filepath="$PROJECT_DIR$/LocalMessageManager/LocalMessageManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiDownload/MultiDownload.iml" filepath="$PROJECT_DIR$/MultiDownload/MultiDownload.iml" />
       <module fileurl="file://$PROJECT_DIR$/PermissionUtils/PermissionUtils.iml" filepath="$PROJECT_DIR$/PermissionUtils/PermissionUtils.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />

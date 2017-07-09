@@ -25,6 +25,7 @@
 
                 <action android:name="omar.modules923.multidownload.action_notification_pause_resume" />
                 <action android:name="omar.modules923.multidownload.action_notification_cancel" />
+                <action android:name="omar.modules923.multidownload.action_notification_open_app" />
 
 
                 <category android:name="android.intent.category.DEFAULT" />

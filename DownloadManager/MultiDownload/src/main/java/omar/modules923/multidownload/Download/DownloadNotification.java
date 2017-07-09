@@ -19,6 +19,7 @@ import static android.app.PendingIntent.FLAG_UPDATE_CURRENT;
 import static android.view.View.GONE;
 import static android.view.View.INVISIBLE;
 import static omar.modules923.multidownload.Download.DownloadService.ACTION_NOTIFICATION_CANCEL;
+import static omar.modules923.multidownload.Download.DownloadService.ACTION_NOTIFICATION_OPEN_APP;
 import static omar.modules923.multidownload.Download.DownloadService.ACTION_NOTIFICATION_PAUSE_RESUME;
 import static omar.modules923.multidownload.Download.DownloadService.EXTRA_TAG;
 
@@ -77,6 +78,9 @@ public class DownloadNotification {
                 R.drawable.pause_notif);
 
 
+        Intent   ACTION_OPEN_APP_INTENT = new Intent(mContext.getApplicationContext()
+                ,DownloadService.class);
+
 
         Intent   ACTION_PAUSE_RESUME_INTENT = new Intent(mContext.getApplicationContext()
         ,DownloadService.class);
@@ -85,7 +89,11 @@ public class DownloadNotification {
         Intent   ACTION_CANCEL_INTENT = new Intent(mContext.getApplicationContext()
                 ,DownloadService.class);
 
-        PendingIntent pause_resume_pendingIntent, cancel_pendingIntent ;
+        PendingIntent openApp_pendingIntent , pause_resume_pendingIntent, cancel_pendingIntent ;
+
+
+         ACTION_OPEN_APP_INTENT.setAction(ACTION_NOTIFICATION_OPEN_APP);
+        ACTION_OPEN_APP_INTENT.putExtra(EXTRA_TAG, downloadItem.getUrl());
 
         ACTION_PAUSE_RESUME_INTENT.putExtra(EXTRA_TAG, downloadItem.getUrl());
 
@@ -95,6 +103,13 @@ public class DownloadNotification {
                 ACTION_NOTIFICATION_PAUSE_RESUME+Long.toString(System.currentTimeMillis()));
         ACTION_CANCEL_INTENT.setAction(
                  ACTION_NOTIFICATION_CANCEL+Long.toString(System.currentTimeMillis()));
+
+
+        openApp_pendingIntent = PendingIntent.getService(
+                mContext.getApplicationContext(),  downloadItem.getId().intValue(),
+                ACTION_OPEN_APP_INTENT,
+                FLAG_UPDATE_CURRENT);
+
 
         pause_resume_pendingIntent = PendingIntent.getService(
                 mContext.getApplicationContext(),  downloadItem.getId().intValue(),
@@ -107,6 +122,8 @@ public class DownloadNotification {
                 ACTION_CANCEL_INTENT,
                 FLAG_UPDATE_CURRENT);
 
+
+        mNotificationView.setOnClickPendingIntent(R.id.rlInfo,openApp_pendingIntent);
 
         mNotificationView.setOnClickPendingIntent(R.id.imgvPauseResume,
                 pause_resume_pendingIntent);
