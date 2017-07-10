@@ -12,6 +12,15 @@ link in google play :
 
 https://play.google.com/store/apps/details?id=omar.apps923.downloadmanager
 
+Thanks to
+https://github.com/Aspsine/MultiThreadDownload
+
+I used this Repository in this app as MultiDownload Module and modified it 
+
+so you can now use this MultiDownload Module in any app you develop that needs download feature .
+
+
+
 see https://github.com/omar-adel/MultiDownloadManager/blob/master/DownloadManager/app/src/main/java/omar/apps923/downloadmanager/activities/MainActivity.java
 
 and all code of course to understand how it works .
@@ -32,7 +41,4 @@ https://github.com/ravirupareliya/Recyclerview-Generic-Adapter/blob/master/app/s
 
 5 - choose directory by https://github.com/passy/Android-DirectoryChooser
 
-6 - Thanks to
-https://github.com/Aspsine/MultiThreadDownload
 
-I used this Repository in this app as MultiDownload Module and modified it 
