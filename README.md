@@ -35,10 +35,12 @@ I used this wonderful class and modeified it a bit
 
 https://github.com/ravirupareliya/Recyclerview-Generic-Adapter/blob/master/app/src/main/java/com/rrr/genericrecyclerview/adapter/RecyclerAdapter.java
 
-3 - ActiveAndroid for sqlite operations https://github.com/pardom/ActiveAndroid
+3 - EventBus by https://github.com/greenrobot/EventBus
 
-4 - tab layout by https://github.com/ogaclejapan/SmartTabLayout
+4 - ActiveAndroid for sqlite operations https://github.com/pardom/ActiveAndroid
 
-5 - choose directory by https://github.com/passy/Android-DirectoryChooser
+5 - tab layout by https://github.com/ogaclejapan/SmartTabLayout
+
+6 - choose directory by https://github.com/passy/Android-DirectoryChooser
 
 
