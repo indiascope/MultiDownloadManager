@@ -8,8 +8,13 @@ android {
         applicationId "omar.apps923.downloadmanager"
         minSdkVersion 15
         targetSdkVersion 25
+<<<<<<< HEAD
         versionCode 5
         versionName "5.0"
+=======
+        versionCode 3
+        versionName "3.0"
+>>>>>>> 160f9e43cb19a76e90ec04aa3ade81f6935bef29
     }
     buildTypes {
         release {
