@@ -92,7 +92,6 @@ public class MainActivity extends BaseActivity implements PopupMenu.OnMenuItemCl
                             else {
 
                                 addDownload();
-                                // binding.edUrl.setText("");
 
                             }
 
@@ -101,7 +100,6 @@ public class MainActivity extends BaseActivity implements PopupMenu.OnMenuItemCl
                         else {
 
                             addDownload();
-                            // binding.edUrl.setText("");
 
                         }
 
@@ -190,7 +188,7 @@ public class MainActivity extends BaseActivity implements PopupMenu.OnMenuItemCl
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
         if (requestCode == 58) {
-            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 
                 try
                 {
@@ -205,6 +203,8 @@ public class MainActivity extends BaseActivity implements PopupMenu.OnMenuItemCl
 
         }
     }
+
+
 
             @Subscribe(threadMode = ThreadMode.MAIN)
             public void updateDownloadItem(Download download)

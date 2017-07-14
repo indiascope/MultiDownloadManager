@@ -18,6 +18,7 @@ import omar.modules923.multidownload.models.Download;
 import static android.app.PendingIntent.FLAG_UPDATE_CURRENT;
 import static android.view.View.GONE;
 import static android.view.View.INVISIBLE;
+import static android.view.View.VISIBLE;
 import static omar.modules923.multidownload.Download.DownloadService.ACTION_NOTIFICATION_CANCEL;
 import static omar.modules923.multidownload.Download.DownloadService.ACTION_NOTIFICATION_OPEN_APP;
 import static omar.modules923.multidownload.Download.DownloadService.ACTION_NOTIFICATION_PAUSE_RESUME;
@@ -142,6 +143,9 @@ public class DownloadNotification {
     public void onProgress (  long finished, long total, int progress ,  Download downloadItem)
     {
 
+        mNotificationView.setViewVisibility(R.id.imgvPauseResume,VISIBLE);
+        mNotificationView.setViewVisibility(R.id.imgvCancel,VISIBLE);
+
         mNotificationView.setTextViewText(R.id.txtvName,downloadItem.getFileName());
 
 
@@ -215,6 +219,8 @@ public class DownloadNotification {
     {
 
 
+        mNotificationView.setViewVisibility(R.id.imgvPauseResume,VISIBLE);
+        mNotificationView.setViewVisibility(R.id.imgvCancel,VISIBLE);
 
         mNotificationView.setTextViewText(R.id.txtvName,downloadItem.getFileName());
 
